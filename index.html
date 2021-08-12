@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700;800&display=swap" rel="stylesheet">
+    <title>LAYS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/logotry.png">
+</head>
+
+<body>
+
+        <section class="sec">
+            <header>
+                <a href="#"><img class="logo" src="images/logo.png" alt="navlogo"></a>
+                <div class="hamburgurmenu" onclick="menuToggle()"></div>
+                <ul class="navlink" type="none">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">What's New</a></li>
+                    <li><a href="#">NewsLetter</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </header>
+            <div class="content">
+                <div class="textbox">
+                    <h2>That's What <br><span>I Want!</span></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, eligendi nisi. Ex, quam unde
+                        neque
+                        libero optio placeat dicta earum vitae debitis repellendus alias magnam in voluptate aperiam
+                        magni
+                        error.</p>
+                    <a href="#">View All Products</a>
+                </div>
+                <div class="imgbox">
+                    <img src="images/lays1.png" id="lays">
+                </div>
+            </div>
+            <ul type="none" class="flavors">
+                <li><img src="images/L1.png" onclick='changeImage("lays1.png")'></li>
+                <li><img src="images/l2-2.png" onclick='changeImage("final1.png")'></li>
+                <li><img src="images/peprika lays.png" onclick='changeImage("pap1.png")'></li>
+            </ul>
+            <ul type="none" class="social">
+                <li><a href="https://twitter.com/NoA76835315" target="_blank"><img src="images/twitter.png"></a>
+                </li>
+                <li><a href="https://www.facebook.com/profile.php?id=100068780289736" target="_blank"><img
+                            src="images/facebook.png"></a></li>
+                <li><a href="https://www.instagram.com/dawood.ahmed8/" target="_blank"><img
+                            src="images/instagram.png"></a>
+                </li>
+            </ul>
+        </section>
+
+
+        <!-- JS LINKS -->
+
+        <script type="text/javascript">
+            function changeImage(a) {
+                document.getElementById("lays").src=a.src;
+            }
+
+            function menuToggle(){
+                const hamburgurmenu = document.querySelector('.hamburgurmenu');
+                const navlink = document.querySelector('.navlink');
+                hamburgurmenu.classList.toggle('active')
+                navlink.classList.toggle('active')
+            }
+        </script>
+</body>
+
+</html>
